@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="../css/map.css" />
+    <title>Map</title>
+  </head>
+</head>
+
+<body>
+  <header>
+    <div class="first_header">
+      <div id="brand_image">
+        <button>
+          <img src="../image/logo.png" onclick="home();" />
+        </button>
+      </div>
+      <div id="toggle"><img src="../image/toggle.png" /></div>
+    </div>
+    <div class="category">
+      <div>
+        <button id="category1">
+          <img id="category1IMG" src="../image/category1.png" onclick="category2(1);" />
+        </button>
+      </div>
+      <div>
+        <button id="category2">
+          <img id="category2IMG" src="../image/category2.png" onclick="category2(2);" />
+        </button>
+      </div>
+      <div>
+        <button id="category3">
+          <img id="category3IMG" src="../image/category3.png" onclick="category2(3);" />
+        </button>
+      </div>
+      <div>
+        <button id="category4">
+          <img id="category4IMG" src="../image/category4.png" onclick="category2(4);" />
+        </button>
+      </div>
+      <div>
+        <button id="category5">
+          <img id="category5IMG" src="../image/category5.png" onclick="category2(5);" />
+        </button>
+      </div>
+      <div>
+        <button id="category6">
+          <img id="category6IMG" src="../image/category6.png" onclick="category2(6);" />
+        </button>
+      </div>
+      <div>
+        <button id="category7">
+          <img id="category7IMG" src="../image/category7.png" onclick="category2(7);" />
+        </button>
+      </div>
+      <div>
+        <button id="category8">
+          <img id="category8IMG" src="../image/category8.png" onclick="category2(8);" />
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="cards">
+    </div>
+    <div id="map"></div>
+    <script src="../js/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_API_KEY&callback=makeMap"></script>
+  </main>
+</body>
+
+</html>
